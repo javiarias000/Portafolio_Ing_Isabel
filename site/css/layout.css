@@ -63,5 +63,6 @@
 @media (min-width:900px){.contact__grid{grid-template-columns:1fr 1fr;gap:80px}}
 
 /* pie */
-.foot{padding:clamp(56px,8vw,104px) 0 calc(32px + env(safe-area-inset-bottom))}
+.foot{padding:clamp(56px,8vw,104px) 0 calc(104px + env(safe-area-inset-bottom))}
+@media (min-width:900px){.foot{padding-bottom:calc(32px + env(safe-area-inset-bottom))}}
 .foot>.wrap{overflow:clip}
