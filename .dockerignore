@@ -1,0 +1,18 @@
+# Fuera del contexto de build (no los necesita ninguna etapa):
+.git
+node_modules
+.env
+.env.*
+docs
+portafolio
+WARP.md
+*.md
+Dockerfile
+.dockerignore
+.DS_Store
+# Se regenera dentro de la imagen con scripts/build-images.mjs
+public/assets/img
+
+# OJO: NO excluir assets/src/ (fotos originales de Facebook, ~16 MB), data/ ni scripts/:
+# la etapa de build los necesita para generar public/assets/img. Solo la etapa
+# "build" los ve; la imagen final de nginx contiene unicamente public/.
