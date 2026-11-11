@@ -1,0 +1,21 @@
+@font-face{font-family:"Fraunces";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/fraunces-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/fraunces-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/instrument-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/instrument-sans-latin-600-normal.woff2) format("woff2")}
+:root{
+  --orange:#D66A2B; --amber:#F19A3E; --oxide:#9E4620; --ink:#1F1F1F;
+  --kraft:#F4E9D8; --kraft-2:#E8D7BA; --paper:#FBF5EA; --wood:#D8B27C; --wood-ink:#5A3A1E;
+  --noel:#6E1A1A; --gold:#E3B65B;
+  --focus:var(--ink);
+  --font-display:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --font-text:"Instrument Sans","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  --step-small:clamp(.875rem,.85rem + .1vw,.9375rem);
+  --step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --step-hero:clamp(2.6rem,1.6rem + 3.6vw,3.75rem);
+  --gutter:clamp(16px,4vw,40px);
+  --section:clamp(72px,11vw,168px);
+  --ease-out:cubic-bezier(.23,1,.32,1);
+  --dur:220ms;
+}

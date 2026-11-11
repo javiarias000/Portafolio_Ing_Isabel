@@ -1,0 +1,107 @@
+[
+ {
+  "id": "hero-navidad",
+  "file": "hero-navidad.jpg",
+  "title": "Arte de campaña Navidad 2026",
+  "category": "campana",
+  "alt": "Mini nacimientos de MDF en cajitas sorpresa con estrellas recortadas, sobre una mesa de madera con adornos navideños"
+ },
+ {
+  "id": "nav-nacimiento",
+  "file": "hero-navidad.jpg",
+  "title": "Mini nacimiento en cajita",
+  "category": "campana",
+  "alt": "Mini nacimiento de MDF en una cajita con estantes: ángel, pastores y reyes en madera clara",
+  "crop": {
+   "left": 90,
+   "top": 300,
+   "width": 330,
+   "height": 560
+  }
+ },
+ {
+  "id": "nav-cajas",
+  "file": "hero-navidad.jpg",
+  "title": "Cajitas sorpresa grabadas",
+  "category": "campana",
+  "alt": "Cajitas de MDF con estrellas recortadas y un Papá Noel grabado con la frase Feliz Navidad 2026 y un nombre",
+  "crop": {
+   "left": 380,
+   "top": 380,
+   "width": 580,
+   "height": 600
+  }
+ },
+ {
+  "id": "pf-aula",
+  "file": "pf/aula-musica.jpg",
+  "title": "Aula para una academia de música",
+  "category": "interiores",
+  "alt": "Render 3D de un aula con sillas y mesas de madera, ventanas altas y un letrero en la pared",
+  "width": 800,
+  "height": 600
+ },
+ {
+  "id": "pf-paraguas",
+  "file": "pf/paraguas-planos.png",
+  "title": "Paraguas: planos técnicos",
+  "category": "producto",
+  "alt": "Plano técnico de un paraguas con vista frontal, vista superior de doce lados y medidas"
+ },
+ {
+  "id": "pf-bano",
+  "file": "pf/bano-render.png",
+  "title": "Baño: distribución y render",
+  "category": "interiores",
+  "alt": "Render 3D de un baño pequeño con inodoro, lavamanos con mueble de madera oscura y piso de madera"
+ },
+ {
+  "id": "pf-comedor",
+  "file": "pf/comedor-render.png",
+  "title": "Comedor con lámpara",
+  "category": "interiores",
+  "alt": "Render 3D de un comedor con mesa, seis sillas de madera, un cuadro y una lámpara roja colgante"
+ },
+ {
+  "id": "pf-robot",
+  "file": "pf/robot-3d.png",
+  "title": "Robot modelado en 3D",
+  "category": "modelado",
+  "alt": "Modelo 3D en blanco y negro de un robot articulado sobre fondo gris con sombra"
+ },
+ {
+  "id": "pf-manzana",
+  "file": "pf/manzana-realista.png",
+  "title": "Manzana vectorizada",
+  "category": "ilustracion",
+  "alt": "Dos manzanas rojas ilustradas con herramienta de malla hasta lograr aspecto fotográfico"
+ },
+ {
+  "id": "pf-ojo",
+  "file": "pf/ojo-ilustracion.png",
+  "title": "Ilustración de un ojo",
+  "category": "ilustracion",
+  "alt": "Ilustración digital de un ojo con iris de colores, ramas grises y la firma Isa Villena"
+ },
+ {
+  "id": "pf-diablada",
+  "file": "pf/afiche-diablada.png",
+  "title": "Afiche Diablada Pillareña",
+  "category": "grafico",
+  "alt": "Afiche con máscara roja de diablo: La Diablada Pillareña, 1 al 6 de enero de 2013, Píllaro, Ecuador"
+ },
+ {
+  "id": "pf-isabel",
+  "file": "pf/isabel.jpg",
+  "title": "Isabel Villena",
+  "category": "retrato",
+  "alt": "Retrato de Isabel Villena sonriendo"
+ },
+ {
+  "id": "logo-midea",
+  "file": "pf/logo-midea.jpg",
+  "title": "Logotipo Midea Diseño Creativo",
+  "category": "marca",
+  "alt": "Logotipo de Midea Diseño Creativo: zorro geométrico naranja sobre la palabra midea"
+ }
+]

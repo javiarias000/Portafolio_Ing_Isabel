@@ -1,0 +1,24 @@
+{
+  "name": "midea-diseno-creativo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sitio estático de Midea Diseño Creativo",
+  "scripts": {
+    "build": "node scripts/build-timeline.mjs && node scripts/build-images.mjs && node scripts/build-site.mjs",
+    "fb:refresh": "node scripts/fetch-facebook.mjs && npm run build",
+    "test": "node --test scripts/",
+    "serve": "npx serve public -l 8080",
+    "e2e": "node scripts/e2e.mjs",
+    "a11y": "node scripts/a11y.mjs",
+    "break-ui": "node scripts/break-ui.mjs",
+    "shoot": "node scripts/shoot.mjs",
+    "lighthouse": "npx lighthouse http://localhost:8080 --form-factor=mobile --chrome-flags=\"--headless=new\""
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.65.0",
+    "sharp": "0.33.5"
+  }
+}

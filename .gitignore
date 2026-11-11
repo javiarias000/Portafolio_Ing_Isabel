@@ -1,5 +1,11 @@
 node_modules
 public/assets/img/
+public/assets/css/
+public/assets/js/
+public/index.html
+public/data/
+public/robots.txt
+public/sitemap.xml
 .taste-skill/
 .lighthouse/
 .tmp/
