@@ -38,23 +38,32 @@
       <svg class="fox" viewBox="0 0 100 100" width="40" height="40" aria-hidden="true" focusable="false"><polygon points="12,8 40,38 10,48" fill="#B4532A"/><polygon points="88,8 60,38 90,48" fill="#B4532A"/><polygon points="10,48 40,38 50,46 50,94" fill="#F4E9D8"/><polygon points="90,48 60,38 50,46 50,94" fill="#F19A3E"/><polygon points="42,80 58,80 50,94" fill="#1F1F1F"/></svg>
       <span>Midea</span>
     </a>
+    <a class="btn btn--ink btn--sm bar__wa" data-wa="Hola Midea, quiero pedir un regalo en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20quiero%20pedir%20un%20regalo%20en%20madera.">WhatsApp</a>
     <nav class="links" aria-label="Secciones">
       <a href="#navidad">Navidad</a><a href="#catalogo">Catálogo</a><a href="#pedir">Cómo pedir</a><a href="#bitacora">Bitácora</a><a href="#portafolio">Portafolio</a>
     </nav>
-    <a class="btn btn--ink btn--sm" data-wa="Hola Midea, quiero pedir un regalo en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20quiero%20pedir%20un%20regalo%20en%20madera.">WhatsApp</a>
   </div>
 
   <div class="hero__stage">
-    <div class="tag">
-      <span class="tag__hole" aria-hidden="true"></span>
-      {{pic fb-25417f3a|Logotipo de Midea Diseño Creativo|240px|tag__logo|eager}}
-      <h1>Regalos que se abren</h1>
+    <div class="hero__copy">
+      <h1>Regalos que <span class="swash">se abren<svg viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M4 15C58 5 118 21 196 10S322 9 396 5" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M40 19C120 12 230 19 330 13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg></span></h1>
       <p class="lead">Cajitas, retratos y detalles en madera MDF grabada con tu nombre. Hechos en Ambato.</p>
-      <a class="btn btn--ink" data-wa="Hola Midea, quiero pedir un regalo en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20quiero%20pedir%20un%20regalo%20en%20madera.">Pedir por WhatsApp</a>
-      <p class="tag__note">Precio, medidas y entrega: consulta por WhatsApp.</p>
+      <div class="hero__cta"><a class="btn btn--ink btn--go" id="hero-cta" data-wa="Hola Midea, quiero pedir un regalo en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20quiero%20pedir%20un%20regalo%20en%20madera.">Pedir por WhatsApp</a></div>
     </div>
-    <div class="hero__art">
-      {{pic hero-navidad|Mini nacimientos de MDF en cajitas sorpresa con estrellas recortadas, sobre una mesa de madera con adornos navideños|(min-width: 900px) 46vw, 100vw|hero__img|priority}}
+    <div class="box">
+      <div class="box__frame">
+        <div class="box__win">
+          {{pic hero-navidad|Mini nacimientos de MDF en cajitas sorpresa con estrellas recortadas, sobre una mesa de madera con adornos navideños|(min-width: 900px) 64vw, 130vw|hero__img|priority}}
+          <span class="box__flap box__flap--l" aria-hidden="true"></span><span class="box__flap box__flap--r" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="label">
+        <div class="tag">
+          <span class="tag__hole" aria-hidden="true"></span>
+          {{pic fb-25417f3a|Logotipo de Midea Diseño Creativo|200px|tag__logo|eager}}
+          <p class="tag__note">Precio, medidas y entrega: consulta por WhatsApp.</p>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -93,29 +102,43 @@
 
 <section class="section catalog" id="catalogo" aria-labelledby="t-catalogo">
   <div class="wrap">
-    <h2 id="t-catalogo" data-reveal>Lo que hacemos en madera</h2>
+    <h2 class="etch" id="t-catalogo" data-reveal>Lo que hacemos en madera</h2>
     <p class="section__intro" data-reveal>Piezas reales de nuestro taller. Todas se piden con tu nombre, tu mensaje o tu foto.</p>
+
+    <article class="feat" data-reveal>
+      <div class="tile__mount">{{pic fb-3b7a1f5f|Tres renos de MDF con nombres y detalles en madera|(min-width: 900px) 56vw, 92vw|tile__img}}</div>
+      <div class="feat__txt">
+        <h3>Renos de MDF</h3>
+        <p>Tres renos de MDF con nombres y detalles en madera.</p>
+        <a class="btn btn--ink btn--go" data-wa="Hola Midea, me interesan los renos de MDF." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesan%20los%20renos%20de%20MDF.">Preguntar por los renos</a>
+      </div>
+    </article>
+
     <ul class="tiles">
-      <li class="tile tile--a" data-reveal>{{pic fb-ce3308a1|Caja de madera clara para una botella de vino con un mensaje grabado|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Caja para vino con mensaje</h3><a data-wa="Hola Midea, me interesa la caja de madera para vino con mensaje grabado." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20la%20caja%20de%20madera%20para%20vino%20con%20mensaje%20grabado.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--b" data-reveal>{{pic fb-3b7a1f5f|Tres renos de MDF con nombres y detalles en madera|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Renos de MDF</h3><a data-wa="Hola Midea, me interesan los renos de MDF." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesan%20los%20renos%20de%20MDF.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--c" data-reveal>{{pic fb-a0357998|Tres cajas negras y de madera con la palabra Papá calada, junto a botellas|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Cajas “Papá” para botella</h3><a data-wa="Hola Midea, me interesan las cajas Papá para botella." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesan%20las%20cajas%20Pap%C3%A1%20para%20botella.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--d" data-reveal>{{pic fb-3e23004f|Portallaves de madera oscura con forma de bigote y llaves colgadas|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Portallaves de bigote</h3><a data-wa="Hola Midea, me interesa el portallaves de bigote." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20el%20portallaves%20de%20bigote.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--b" data-reveal>{{pic fb-3e49021f|Cubo de madera con fotografías en cada cara y una pluma al lado|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Cubo de fotos en madera</h3><a data-wa="Hola Midea, me interesa el cubo de fotos en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20el%20cubo%20de%20fotos%20en%20madera.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--a" data-reveal>{{pic fb-198e27fa|Marco de madera con tres espacios para fotos y las palabras Papá te amamos|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Marco “Papá te amamos”</h3><a data-wa="Hola Midea, me interesa el marco Papá te amamos." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20el%20marco%20Pap%C3%A1%20te%20amamos.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--d" data-reveal>{{pic fb-8cd33067|Fila de tarjetas de madera grabadas con texto|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Tarjetas grabadas</h3><a data-wa="Hola Midea, me interesan las tarjetas de madera grabadas." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesan%20las%20tarjetas%20de%20madera%20grabadas.">Consulta por WhatsApp</a></div></li>
-      <li class="tile tile--c" data-reveal>{{pic fb-4d7751c8|Caja de regalo con forma de corbata, con chocolates y una botella|(min-width: 900px) 24vw, 46vw|tile__img}}<div class="tile__strip"><h3>Caja corbata de regalo</h3><a data-wa="Hola Midea, me interesa la caja corbata de regalo." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20la%20caja%20corbata%20de%20regalo.">Consulta por WhatsApp</a></div></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesa la caja corbata de regalo." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20la%20caja%20corbata%20de%20regalo."><div class="tile__mount">{{pic fb-4d7751c8|Caja de regalo con forma de corbata, con chocolates y una botella|(min-width: 900px) 30vw, 46vw|tile__img}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Caja corbata de regalo</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesan las tarjetas de madera grabadas." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesan%20las%20tarjetas%20de%20madera%20grabadas."><div class="tile__mount">{{pic fb-8cd33067|Fila de tarjetas de madera grabadas con texto|(min-width: 900px) 30vw, 46vw|tile__img tile__img--trim}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Tarjetas grabadas</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesa la caja de madera para vino con mensaje grabado." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20la%20caja%20de%20madera%20para%20vino%20con%20mensaje%20grabado."><div class="tile__mount">{{pic fb-ce3308a1|Caja de madera clara para una botella de vino con un mensaje grabado|(min-width: 900px) 30vw, 46vw|tile__img tile__img--trim}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Caja para vino con mensaje</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesa el cubo de fotos en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20el%20cubo%20de%20fotos%20en%20madera."><div class="tile__mount">{{pic fb-3e49021f|Cubo de madera con fotografías en cada cara y una pluma al lado|(min-width: 900px) 30vw, 46vw|tile__img}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Cubo de fotos en madera</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesan las cajas Papá para botella." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesan%20las%20cajas%20Pap%C3%A1%20para%20botella."><div class="tile__mount">{{pic fb-a0357998|Tres cajas negras y de madera con la palabra Papá calada, junto a botellas|(min-width: 900px) 30vw, 46vw|tile__img}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Cajas “Papá” para botella</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesa el portallaves de bigote." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20el%20portallaves%20de%20bigote."><div class="tile__mount">{{pic fb-3e23004f|Portallaves de madera oscura con forma de bigote y llaves colgadas|(min-width: 900px) 30vw, 46vw|tile__img}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Portallaves de bigote</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
+      <li class="tile" data-reveal><a class="tile__link" data-wa="Hola Midea, me interesa el marco Papá te amamos." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20me%20interesa%20el%20marco%20Pap%C3%A1%20te%20amamos."><div class="tile__mount">{{pic fb-198e27fa|Marco de madera con tres espacios para fotos y las palabras Papá te amamos|(min-width: 900px) 30vw, 46vw|tile__img}}<span class="tile__go" aria-hidden="true"></span></div><div class="tile__cap"><h3>Marco “Papá te amamos”</h3><span class="vh">: preguntar por WhatsApp</span></div></a></li>
     </ul>
+
+    <div class="catalog__cta" data-reveal>
+      <p class="lead">¿No ves tu idea? Cuéntanosla y la diseñamos contigo.</p>
+      <a class="btn btn--ink btn--go" data-wa="Hola Midea, quiero consultar por una pieza en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20quiero%20consultar%20por%20una%20pieza%20en%20madera.">Consultar por WhatsApp</a>
+    </div>
   </div>
 </section>
 
 <section class="section about" aria-labelledby="t-about">
   <div class="wrap about__grid">
-    <div class="about__sheet" data-reveal>
-      <h2 id="t-about">Un taller de diseño en Ambato</h2>
+    <div class="sheet-wrap" data-reveal><div class="about__sheet">
+      <h2 class="etch" id="t-about">Un taller de diseño en Ambato</h2>
       <p>Midea Diseño Creativo convierte nombres, fotos y mensajes en regalos de madera grabada: retratos, cajitas, adornos y detalles para el Día de la Madre, el Día del Padre y la Navidad.</p>
       <p>Cada pieza se personaliza contigo antes de cortarla y grabarla con láser.</p>
       <p class="about__sign">Teléfono y WhatsApp: <a href="tel:+593987738663">+593 987 738 663</a></p>
-    </div>
+    </div></div>
     <div class="about__art" data-reveal>
       {{pic fb-8e7a084b|Zorro geométrico naranja, símbolo de Midea Diseño Creativo|(min-width: 900px) 20vw, 40vw|about__fox}}
     </div>
@@ -128,18 +151,18 @@
       <h2 id="t-pedir">Así se pide</h2>
       <p class="section__intro">Todo se coordina por WhatsApp, sin formularios largos.</p>
     </div>
-    <ol class="slip" data-reveal>
+    <div class="sheet-wrap" data-reveal><ol class="slip">
       <li><span>Nos escribes lo que quieres regalar</span><i aria-hidden="true"></i><b>Primero</b></li>
       <li><span>Personalizamos el diseño contigo</span><i aria-hidden="true"></i><b>Después</b></li>
       <li><span>Coordinamos entrega o envío</span><i aria-hidden="true"></i><b>Al final</b></li>
       <li class="slip__total"><span>Tu regalo en madera, listo para abrir</span><b>Tiempos y entrega: consulta por WhatsApp</b></li>
-    </ol>
+    </ol></div>
   </div>
 </section>
 
 <section class="section log" id="bitacora" aria-labelledby="t-bitacora">
   <div class="wrap">
-    <h2 id="t-bitacora" data-reveal>Bitácora de publicaciones</h2>
+    <h2 class="etch" id="t-bitacora" data-reveal>Bitácora de publicaciones</h2>
     <p class="section__intro" data-reveal id="log-intro">Todo lo que hemos publicado en Facebook, de lo más reciente a lo más antiguo. Las publicaciones repetidas se juntan en una sola tarjeta.</p>
     <ol class="log__grid" id="log-grid" aria-describedby="log-intro"></ol>
     <noscript><p class="log__more">Activa JavaScript para ver la bitácora o visítala en <a href="https://www.facebook.com/1130355880150943">nuestra página de Facebook</a>.</p></noscript>
@@ -176,7 +199,7 @@
 <section class="section contact" id="contacto" aria-labelledby="t-contacto">
   <div class="wrap contact__grid">
     <div class="contact__info" data-reveal>
-      <h2 id="t-contacto">Cuéntanos qué quieres regalar</h2>
+      <h2 class="etch" id="t-contacto">Cuéntanos qué quieres regalar</h2>
       <p class="lead">Respondemos por WhatsApp. Si prefieres, escríbenos directo.</p>
       <ul class="contact__list">
         <li><a href="https://wa.me/593987738663" data-wa="Hola Midea, quiero hacer un pedido.">WhatsApp +593 987 738 663</a></li>
@@ -185,7 +208,7 @@
         <li>Ambato, Ecuador</li>
       </ul>
     </div>
-    <form class="coupon" id="coupon" data-reveal action="https://wa.me/593987738663" method="get" target="_blank">
+    <div class="sheet-wrap sheet-wrap--coupon" data-reveal><form class="coupon" id="coupon" action="https://wa.me/593987738663" method="get" target="_blank">
       <p class="coupon__title">Pedido rápido</p>
       <label class="field"><span>Tu nombre</span><input name="yo" type="text" autocomplete="name" maxlength="60"></label>
       <label class="field"><span>¿Qué te interesa?</span>
@@ -198,7 +221,7 @@
       <label class="field"><span>Nombre o texto para grabar</span><input name="texto" type="text" maxlength="60"></label>
       <button class="btn btn--ink" type="submit">Enviar por WhatsApp</button>
       <p class="coupon__note">Se abre WhatsApp con tu mensaje listo. Precio y entrega: consulta por WhatsApp.</p>
-    </form>
+    </form></div>
   </div>
 </section>
 
@@ -213,6 +236,8 @@
     <p>&copy; 2026 Villena Cárdenas María Isabel. Midea Diseño Creativo, Ambato, Ecuador.</p>
   </div>
 </footer>
+
+<div class="wabar" id="wabar"><a class="btn btn--orange btn--go" data-wa="Hola Midea, quiero pedir un regalo en madera." href="https://wa.me/593987738663?text=Hola%20Midea%2C%20quiero%20pedir%20un%20regalo%20en%20madera.">Pedir por WhatsApp</a></div>
 
 <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
   <form method="dialog"><button class="lightbox__close" aria-label="Cerrar">Cerrar</button></form>

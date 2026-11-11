@@ -62,3 +62,24 @@ if (lb && typeof lb.showModal === 'function') {
 } else document.querySelectorAll('[data-piece]').forEach(b => { b.disabled = true; });
 
 initTimeline();
+
+// Nombre grabado: el laser "quema" el nombre al verlo y tras cada pausa al escribir (no en cada tecla)
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (out && !reduceMotion) {
+  const burn = () => { out.classList.remove('is-burn'); void out.offsetWidth; out.classList.add('is-burn'); };
+  out.addEventListener('animationend', () => out.classList.remove('is-burn'));
+  let t; inp.addEventListener('input', () => { clearTimeout(t); t = setTimeout(burn, 320); });
+  if ('IntersectionObserver' in window) {
+    const once = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { burn(); once.disconnect(); } }, { threshold: .6 });
+    once.observe(out);
+  }
+}
+
+// Barra inferior de WhatsApp (movil): visible tras el hero, oculta cuando el contacto ya trae su propio boton
+const wabar = document.getElementById('wabar'), heroCta = document.getElementById('hero-cta'), contacto = document.getElementById('contacto');
+if (wabar && heroCta && 'IntersectionObserver' in window) {
+  let heroOut = false, contactIn = false;
+  const sync = () => wabar.classList.toggle('is-on', heroOut && !contactIn);
+  new IntersectionObserver(es => { const e = es.at(-1); heroOut = !e.isIntersecting && e.boundingClientRect.top < 0; sync(); }).observe(heroCta);
+  if (contacto) new IntersectionObserver(es => { contactIn = es.at(-1).isIntersecting; sync(); }, { rootMargin: '0px 0px -35% 0px' }).observe(contacto);
+}

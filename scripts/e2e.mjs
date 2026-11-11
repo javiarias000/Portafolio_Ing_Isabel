@@ -14,7 +14,7 @@ for (const w of [320, 768, 1440]) {
 }
 const ctx = await b.newContext({ viewport: { width: 390, height: 700 } }); const p = await ctx.newPage();
 await p.goto(url, { waitUntil: 'networkidle' });
-const cta = await p.locator('.tag a.btn').boundingBox(); assert.ok(cta.y + cta.height < 700, 'CTA WhatsApp visible sin scroll en móvil'); ok('CTA WhatsApp visible sin scroll (390x700)');
+const cta = await p.locator('#hero-cta').boundingBox(); assert.ok(cta.y + cta.height < 700, 'CTA WhatsApp visible sin scroll en móvil'); ok('CTA WhatsApp visible sin scroll (390x700)');
 const was = await p.$$eval('a[data-wa]', as => as.map(a => a.href)); assert.ok(was.length >= 12 && was.every(h => /^https:\/\/wa\.me\/593987738663(\?text=.+)?$/.test(h))); ok(`${was.length} enlaces wa.me válidos`);
 await p.fill('#engrave-in', 'María José'); assert.equal(await p.textContent('#engrave-out'), 'María José');
 assert.ok((await p.getAttribute('#engrave-wa', 'href')).includes(encodeURIComponent('María José'))); ok('nombre grabado actualiza caja y enlace');
@@ -32,5 +32,5 @@ const rm = await b.newContext({ viewport: { width: 1440, height: 900 }, reducedM
 await q.goto(url, { waitUntil: 'networkidle' });
 const vis = await q.evaluate(() => [...document.querySelectorAll('[data-reveal]')].every(e => getComputedStyle(e).opacity === '1' && getComputedStyle(e).transform === 'none')); assert.ok(vis); ok('prefers-reduced-motion: contenido visible sin desplazamientos');
 const nojs = await (await b.newContext({ javaScriptEnabled: false })).newPage(); await nojs.goto(url);
-assert.ok(await nojs.$eval('.tag a.btn', a => a.href.startsWith('https://wa.me/593987738663'))); assert.ok(await nojs.$eval('h1', h => getComputedStyle(h).opacity === '1')); ok('sin JavaScript: contenido y CTA funcionan');
+assert.ok(await nojs.$eval('#hero-cta', a => a.href.startsWith('https://wa.me/593987738663'))); assert.ok(await nojs.$eval('h1', h => getComputedStyle(h).opacity === '1')); ok('sin JavaScript: contenido y CTA funcionan');
 await b.close(); console.log('e2e: todo ok');
