@@ -11,6 +11,10 @@ Actualizado: 2026-11-11 (sesión de Claude Code por SSH). Léelo primero si reto
 | EasyPanel | Servicio `mideaweb` en proyecto `javlabs` (panel `http://76.13.229.236:3000`): GitHub `main`, Dockerfile en la raíz, puerto 80, dominio `*.easypanel.host`. Se redespliega con el botón **Deploy** |
 | **Rediseño "subir de nivel" (UX/UI)** | **TERMINADO y commiteado en local** (`7c198eb`, `08f5c98`), **sin push ni deploy**. Verificado: build, 17/17 pruebas, e2e 11/11, axe 0 violaciones, Lighthouse móvil 96/100/100/100 (LCP simulado 2,8 s). Capturas antes/después en `.tmp/shots/{before,after}` (ignoradas por git) |
 
+## Trabajo parcial guardado (taste-skill v3)
+
+La skill taste-skill 2.5.1 se instaló global (`~/.agents/skills/design-taste-frontend`). Un agente empezó a migrar el sitio a su kit (páginas separadas bitácora/portafolio, `site/kit/`, `page.css`) y fue detenido a medias. Ese trabajo INCOMPLETO está en la rama local `wip/taste-v3` (commit `740b65d`); **no se ha revisado ni verificado visualmente**. `main` sigue en el v2 terminado. Para retomarlo: `git switch wip/taste-v3` y terminar con la skill; si se descarta: `git branch -D wip/taste-v3`.
+
 ## Siguiente paso inmediato
 
 1. **Javier:** `git push origin main` desde su terminal.
